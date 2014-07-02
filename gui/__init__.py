@@ -1,2 +1,3 @@
+import entrydlg
 import main
 
