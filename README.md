@@ -13,6 +13,12 @@ Following python-libs are required, used and imported:
 * shlex
 * subprocess
 
+## Deb-Packages
+
+Take a look at the deb-packages available:
+
+<a href="https://github.com/dennishafemann/tmux-cssh-gui/tree/deb-package">branch: deb-packages</a>
+
 ## TMUX-CSSH
 
 <a href="https://github.com/dennishafemann/tmux-cssh">tmux-cssh @ github.com</a>
