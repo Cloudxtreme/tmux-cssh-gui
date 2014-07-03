@@ -12,7 +12,7 @@
         <property name="use_action_appearance">False</property>
         <property name="label" translatable="yes">Show/Hide window</property>
         <property name="use_underline">True</property>
-        <signal name="activate" handler="on_menuitemShowHideMainwindow_activate" swapped="no"/>
+        <signal name="activate" handler="on_menuitemShowHideMainwindow_activate" />
       </widget>
     </child>
     <child>
@@ -33,7 +33,7 @@
         <property name="use_action_appearance">False</property>
         <property name="use_underline">True</property>
         <property name="use_stock">True</property>
-        <signal name="activate" handler="on_menuItemQuit_activate" swapped="no"/>
+        <signal name="activate" handler="on_menuItemQuit_activate" />
       </widget>
     </child>
   </widget>
@@ -44,9 +44,9 @@
     <property name="title" translatable="yes">TMux-C(luster)SSH-GUI</property>
     <property name="default_width">600</property>
     <property name="default_height">400</property>
-    <signal name="destroy" handler="on_destroy" swapped="no"/>
-    <signal name="window_state_event" handler="on_windowMain_window_state_event" swapped="no"/>
-    <signal name="check_resize" handler="on_windowMain_check_resize_event" swapped="no"/>
+    <signal name="destroy" handler="on_destroy" />
+    <signal name="window_state_event" handler="on_windowMain_window_state_event" />
+    <signal name="check_resize" handler="on_windowMain_check_resize_event" />
     <child>
       <widget class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
@@ -74,7 +74,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                        <signal name="activate" handler="on_menuItemAdd_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuItemAdd_activate" />
                       </widget>
                     </child>
                     <child>
@@ -86,7 +86,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                        <signal name="activate" handler="on_menuItemEdit_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuItemEdit_activate" />
                       </widget>
                     </child>
                     <child>
@@ -98,7 +98,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                        <signal name="activate" handler="on_menuItemRemove_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuItemRemove_activate" />
                       </widget>
                     </child>
                     <child>
@@ -116,7 +116,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                        <signal name="activate" handler="on_menuItemQuit_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuItemQuit_activate" />
                       </widget>
                     </child>
                   </widget>
@@ -142,7 +142,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                        <signal name="activate" handler="on_menuItemAbout_activate" swapped="no"/>
+                        <signal name="activate" handler="on_menuItemAbout_activate" />
                       </widget>
                     </child>
                   </widget>
@@ -182,7 +182,7 @@
                             <property name="receives_default">True</property>
                             <property name="use_action_appearance">False</property>
                             <property name="use_underline">True</property>
-                            <signal name="clicked" handler="on_bAddSetting_clicked" swapped="no"/>
+                            <signal name="clicked" handler="on_bAddSetting_clicked" />
                           </widget>
                           <packing>
                             <property name="expand">True</property>
@@ -199,7 +199,7 @@
                             <property name="receives_default">True</property>
                             <property name="use_action_appearance">False</property>
                             <property name="use_underline">True</property>
-                            <signal name="clicked" handler="on_bEditSetting_clicked" swapped="no"/>
+                            <signal name="clicked" handler="on_bEditSetting_clicked" />
                           </widget>
                           <packing>
                             <property name="expand">False</property>
@@ -216,7 +216,7 @@
                             <property name="receives_default">True</property>
                             <property name="use_action_appearance">False</property>
                             <property name="use_underline">True</property>
-                            <signal name="clicked" handler="on_bRemoveSetting_clicked" swapped="no"/>
+                            <signal name="clicked" handler="on_bRemoveSetting_clicked" />
                           </widget>
                           <packing>
                             <property name="expand">True</property>
@@ -233,7 +233,7 @@
                             <property name="receives_default">True</property>
                             <property name="use_action_appearance">False</property>
                             <property name="use_underline">True</property>
-                            <signal name="clicked" handler="on_bRunSetting_clicked" swapped="no"/>
+                            <signal name="clicked" handler="on_bRunSetting_clicked" />
                           </widget>
                           <packing>
                             <property name="expand">True</property>
@@ -271,8 +271,8 @@
                                   <widget class="GtkTreeView" id="treeviewSettings">
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
-                                    <signal name="cursor_changed" handler="on_treeviewSettings_cursor_changed" swapped="no"/>
-                                    <signal name="row_activated" handler="on_treeviewSettings_row_activated" swapped="no"/>
+                                    <signal name="cursor_changed" handler="on_treeviewSettings_cursor_changed" />
+                                    <signal name="row_activated" handler="on_treeviewSettings_row_activated" />
                                   </widget>
                                 </child>
                               </widget>
@@ -410,7 +410,7 @@
                                                             <property name="receives_default">False</property>
                                                             <property name="use_action_appearance">False</property>
                                                             <property name="draw_indicator">True</property>
-                                                            <signal name="toggled" handler="on_formitem_changed" swapped="no"/>
+                                                            <signal name="toggled" handler="on_formitem_changed" />
                                                           </widget>
                                                           <packing>
                                                             <property name="expand">False</property>
@@ -476,7 +476,7 @@
                                                             <property name="receives_default">False</property>
                                                             <property name="use_action_appearance">False</property>
                                                             <property name="draw_indicator">True</property>
-                                                            <signal name="toggled" handler="on_formitem_changed" swapped="no"/>
+                                                            <signal name="toggled" handler="on_formitem_changed" />
                                                           </widget>
                                                           <packing>
                                                             <property name="expand">False</property>
@@ -542,7 +542,7 @@
                                                             <property name="receives_default">False</property>
                                                             <property name="use_action_appearance">False</property>
                                                             <property name="draw_indicator">True</property>
-                                                            <signal name="toggled" handler="on_formitem_changed" swapped="no"/>
+                                                            <signal name="toggled" handler="on_formitem_changed" />
                                                           </widget>
                                                           <packing>
                                                             <property name="expand">False</property>
@@ -626,7 +626,7 @@
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="primary_icon_sensitive">True</property>
                                                     <property name="secondary_icon_sensitive">True</property>
-                                                    <signal name="focus_out_event" handler="on_formitem_changed" swapped="no"/>
+                                                    <signal name="focus_out_event" handler="on_formitem_changed" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">True</property>
@@ -697,7 +697,7 @@
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="primary_icon_sensitive">True</property>
                                                     <property name="secondary_icon_sensitive">True</property>
-                                                    <signal name="focus_out_event" handler="on_formitem_changed" swapped="no"/>
+                                                    <signal name="focus_out_event" handler="on_formitem_changed" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">True</property>
@@ -763,7 +763,7 @@
                                                     <property name="visible">True</property>
                                                     <property name="can_focus">False</property>
                                                     <property name="create_folders">False</property>
-                                                    <signal name="file_set" handler="on_formitem_changed" swapped="no"/>
+                                                    <signal name="file_set" handler="on_formitem_changed" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">True</property>
@@ -779,7 +779,7 @@
                                                     <property name="can_focus">True</property>
                                                     <property name="receives_default">True</property>
                                                     <property name="use_action_appearance">False</property>
-                                                    <signal name="clicked" handler="on_bClearCertificateIdentity_clicked" swapped="no"/>
+                                                    <signal name="clicked" handler="on_bClearCertificateIdentity_clicked" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">False</property>
@@ -848,7 +848,7 @@
                                                     <property name="secondary_icon_activatable">False</property>
                                                     <property name="primary_icon_sensitive">True</property>
                                                     <property name="secondary_icon_sensitive">True</property>
-                                                    <signal name="focus_out_event" handler="on_formitem_changed" swapped="no"/>
+                                                    <signal name="focus_out_event" handler="on_formitem_changed" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">True</property>
@@ -901,7 +901,7 @@
                                                     <property name="can_focus">True</property>
                                                     <property name="receives_default">True</property>
                                                     <property name="use_action_appearance">False</property>
-                                                    <signal name="clicked" handler="on_bAddSC_clicked" swapped="no"/>
+                                                    <signal name="clicked" handler="on_bAddSC_clicked" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">False</property>
@@ -977,7 +977,7 @@
                                                     <property name="can_focus">True</property>
                                                     <property name="receives_default">True</property>
                                                     <property name="use_action_appearance">False</property>
-                                                    <signal name="clicked" handler="on_bAddFilename_clicked" swapped="no"/>
+                                                    <signal name="clicked" handler="on_bAddFilename_clicked" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">False</property>
@@ -1044,7 +1044,7 @@
                                                     <property name="can_focus">True</property>
                                                     <property name="receives_default">True</property>
                                                     <property name="use_action_appearance">False</property>
-                                                    <signal name="clicked" handler="on_bAddConfigSetting_clicked" swapped="no"/>
+                                                    <signal name="clicked" handler="on_bAddConfigSetting_clicked" />
                                                   </widget>
                                                   <packing>
                                                     <property name="expand">False</property>
