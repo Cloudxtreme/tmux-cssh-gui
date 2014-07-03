@@ -8,8 +8,6 @@ import environment
 
 class Config:
 
-    __CONFIG_FILENAME = None
-
     SECTION_WINDOW = 'window'
     OPTION_WINDOW_SIZE_X = 'size-x'
     OPTION_WINDOW_SIZE_Y = 'size-y'
@@ -24,7 +22,6 @@ class Config:
     def __init__(self):
         # Expand settings filename, so that ~ is the real users home path
         self.__CONFIG_FILENAME=environment.APP_CONFIG_FILE
-        self.__CONFIG_FILENAME=os.path.expanduser(self.__CONFIG_FILENAME)
 
         # Init config-parser
         self.__configParser=ConfigParser.ConfigParser()

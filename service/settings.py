@@ -8,18 +8,16 @@ import shlex
 
 from model.setting import Setting
 from helper import output
+import environment
 
 
 class Settings:
-
-    # Constant: Name of tmux-cssh settings file, located in users home directory
-    __SETTINGS_FILENAME='~/.tmux-cssh'
 
     __settings=[]
 
     def __init__(self):
         # Expand settings filename, so that ~ is the real users home path
-        self.__SETTINGS_FILENAME=os.path.expanduser(self.__SETTINGS_FILENAME)
+        self.__SETTINGS_FILENAME=environment.TMUX_CSSH_CONFIG_FILENAME
 
         # Load settings
         self.load()
