@@ -4,7 +4,7 @@ Section: main/misc
 Priority: extra
 Architecture: all
 Depends: tmux-cssh
-Installed-Size: ...
+Installed-Size: 220
 Maintainer: Dennis Hafemann <dennis.hafemann@gmail.com>
 Homepage: https://plus.google.com/+DennisHafemann
 Description: A simple, usefull GUI on top of tmux-cssh.
