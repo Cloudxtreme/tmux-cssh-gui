@@ -17,7 +17,7 @@ Following python-libs are required, used and imported:
 
 Take a look at the deb-packages available:
 
-<a href="https://github.com/dennishafemann/tmux-cssh-gui/tree/deb-package">branch: deb-packages</a>
+<a href="https://github.com/dennishafemann/tmux-cssh-gui/tree/deb-package/deb-packages">branch: deb-packages</a>
 
 ## TMUX-CSSH
 
