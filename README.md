@@ -13,3 +13,6 @@ Following python-libs are required, used and imported:
 * shlex
 * subprocess
 
+## TMUX-CSSH
+
+<a href="https://github.com/dennishafemann/tmux-cssh">tmux-cssh @ github.com</a>
