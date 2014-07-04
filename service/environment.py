@@ -6,7 +6,7 @@ import os
 APP_NAME = 'TMUX-CSSH GUI'
 
 # Version of application
-APP_VERSION = '1.1.0'
+APP_VERSION = '1.0.1-0'
 
 # App's website
 APP_WEBSITE = 'https://github.com/dennishafemann/tmux-cssh-gui'
