@@ -1,10 +1,10 @@
 Package: tmux-cssh-gui
-Version: 1.0.0-0
+Version: 1.0.1-0
 Section: main/misc
 Priority: extra
 Architecture: all
-Depends: tmux-cssh
+Depends: python tmux-cssh
 Installed-Size: 220
 Maintainer: Dennis Hafemann <dennis.hafemann@gmail.com>
-Homepage: https://plus.google.com/+DennisHafemann
-Description: A simple, usefull GUI on top of tmux-cssh.
+Homepage: https://github.com/dennishafemann/tmux-cssh-gui
+Description: A simple, useful GUI on top of tmux-cssh.
