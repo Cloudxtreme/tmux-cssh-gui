@@ -302,6 +302,10 @@ class TMUXCSSHGUI:
         cbQuietMode=self.__gladeXML.get_widget('cbQuietMode')
         cbQuietMode.set_active(settingsFromObject.quietMode)
 
+        # Add dont-synchronization mode to form
+        cbDontSynchronizeMode=self.__gladeXML.get_widget('cbDontSynchronizeMode')
+        cbDontSynchronizeMode.set_active(not settingsFromObject.synchronizePanes)
+
         # Add filenames to form
         # Remove old
         for vboxFilenameChildren in self.__vboxFilename.get_children():
@@ -348,6 +352,10 @@ class TMUXCSSHGUI:
             # Quiet mode
             f=self.__gladeXML.get_widget('cbQuietMode')
             if f.get_active(): valueArray.append('-q')
+
+            # Quiet mode
+            f=self.__gladeXML.get_widget('cbDontSynchronizeMode')
+            if f.get_active(): valueArray.append('-ds')
 
             # TMUX Session name
             f=self.__gladeXML.get_widget('fTMUXSessionName')
