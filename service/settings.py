@@ -140,6 +140,8 @@ class Settings:
             parser.add_argument('-f', '--filename', type=str, nargs=1, action='append', dest='filename')
             # Config Setting
             parser.add_argument('-cs', '--config-setting', type=str, nargs=1, action='append', dest='configSetting')
+            # Don't clusterize/synchronize panes
+            parser.add_argument('-dc', '-ds', '--dont-clusterize', '--dont-synchronize', action='store_false', default=True, dest='synchronizePanes')
 
             # Other parameters go to -sc
 
