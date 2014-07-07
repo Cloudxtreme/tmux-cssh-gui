@@ -1,5 +1,5 @@
 Package: tmux-cssh-gui
-Version: 1.0.1-0
+Version: 1.0.1-1
 Section: main/misc
 Priority: extra
 Architecture: all
